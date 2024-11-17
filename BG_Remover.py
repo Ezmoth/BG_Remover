@@ -6,10 +6,10 @@ import Parts
 # Core engine of the program
 def remover():
     # Initialize all variables
-    to_process_folder = "To Process\\"
-    done_folder = "Done\\"
-    parts_folder = "Res\\"
-    file_name_list = [f for f in os.listdir("To Process") if os.path.isfile(os.path.join("To Process", f))]
+    to_process_folder = "to_process\\"
+    done_folder = "finished\\"
+    parts_folder = "res\\"
+    file_name_list = [f for f in os.listdir("to_process") if os.path.isfile(os.path.join("to_process", f))]
     n = 0
     # Show how many files are there to process
     print(f"Files to process: {len(file_name_list)}")
